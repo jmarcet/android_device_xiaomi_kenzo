@@ -61,8 +61,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
 # Toolchain
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
-TARGET_GCC_VERSION_ARM64 := 4.9-kernel-linaro
-TARGET_GCC_VERSION_ARM64_ROM := 4.9-kernel-linaro
+TARGET_GCC_VERSION_ARM64 := 4.9
+TARGET_GCC_VERSION_ARM64_ROM := 4.9
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
