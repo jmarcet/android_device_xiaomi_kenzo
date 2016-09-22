@@ -14,7 +14,12 @@
    "target_path": "vendor/qcom/opensource/dataservices",
    "branch": "cm-13.0"
 },
-  {
+ {
+   "repository": "TipsyOS/packages_apps_snap",
+   "target_path": "packages/apps/Snap",
+   "branch": "6.0"
+},
+   {
     "repository": "CyanogenMod/hardware_cyanogen",
     "target_path": "hardware/cyanogen",
     "branch": "cm-13.0"
