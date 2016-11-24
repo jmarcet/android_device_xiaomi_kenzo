@@ -59,6 +59,11 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8956
 TARGET_KERNEL_CONFIG := cyanogenmod_kenzo_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
+# Toolchain
+KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
+TARGET_GCC_VERSION_ARM64 := 4.9
+TARGET_GCC_VERSION_ARM64_ROM := 4.9
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
@@ -117,7 +122,7 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
+# TARGET_HW_DISK_ENCRYPTION := true
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -158,7 +163,7 @@ TARGET_PER_MGR_ENABLED := true
 TARGET_POWERHAL_VARIANT := qcom
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_SYSTEM_PROP += device/xiaomi/kenzo/system.prop
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
